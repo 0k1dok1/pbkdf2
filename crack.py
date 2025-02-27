@@ -28,6 +28,6 @@ def find_matching_password(dictionary_file, target_hash, salt, iterations=50000,
         return None
  
 salt = binascii.unhexlify('8bf3e3452b78544f8bee9400d6936d34')
-target_hash = 'e531d398946137baea70ed6a680a54385ecff131309c0bd8f225f284406b7cbc8efc5dbef30bf1682619263444ea594cfb56'
-dictionary_file = '/usr/share/wordlists/rockyou.txt'
+target_hash = 'Add your hash here'
+dictionary_file = '/usr/share/wordlists/rockyou.txt' #if you dont have this wordlist modify it add ur own wordlist
 find_matching_password(dictionary_file, target_hash, salt)
