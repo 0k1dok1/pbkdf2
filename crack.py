@@ -20,7 +20,7 @@ def find_matching_password(dictionary_file, target_hash, salt, iterations=50000,
             password = line.strip()
             hash_value = pbkdf2_hash(password, salt, iterations, dklen)
             count += 1
-            print(f"正在检查密码 {count}: {password}")
+            print(f"Checking {count}: {password}")
             if hash_value == target_hash_bytes:
                 print(f"\nFound password: {password}")
                 return password
